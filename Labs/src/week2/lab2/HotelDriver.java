@@ -35,6 +35,6 @@ public class HotelDriver {
 		rooms[1].isOccupied();
 		System.out.println("Room: " + rooms[1].toString());
 	
-	}//main
+	}//mains
 
 }

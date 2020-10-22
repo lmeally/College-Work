@@ -2,7 +2,7 @@ package week2.lab2;
 
 public class HotelRoom {
 	
-	//Variables
+	//Variabless
 	private int roomNumber;
 	private String roomType;
 	private boolean vacant;
