@@ -1,6 +1,6 @@
 package week1.lab1;
 
-//Student Name 	: Oisin Cawley
+//Student Name 	: Oisin Cawleys
 //Student Id Number: 
 //Date 			: Nov-2015
 //Purpose 			: My first class implementation

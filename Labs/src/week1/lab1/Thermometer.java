@@ -1,6 +1,6 @@
 package week1.lab1;
 
-//Implements a Thermometer class.
+//Implements a Thermometer classs.
 //Stores the current temperature in Celcius
 public class Thermometer
 { // begin Thermometer
