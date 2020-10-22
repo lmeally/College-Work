@@ -5,15 +5,27 @@ public class HotelRoom {
 	//Variables
 	private int roomNumber;
 	private String roomType;
+	private boolean vacant;
+	private double rate; 
+	
 	
 	//Constructors
 	public HotelRoom() {
 		setRoomNumber(0);
-		setRoomType("");		
+		setRoomType("");
+		setVacant(false);
+		setRate(0);
 	} 	
 	public HotelRoom(int roomNumber, String roomType) {
 		setRoomNumber(roomNumber);
 		setRoomType(roomType);
+	}
+	public HotelRoom(int roomNumber, String roomType, boolean vacant, double rate) {
+		super();
+		setRoomNumber(roomNumber);
+		setRoomType(roomType);
+		setVacant(false);
+		setRate(rate);
 	}
 	//Getters & Setters
 	public int getRoomNumber() {
@@ -28,7 +40,35 @@ public class HotelRoom {
 	public void setRoomType(String roomType) {
 		this.roomType = roomType;
 	}
+		
+	public boolean getVacant() {
+		return vacant;
+	}
+	public void setVacant(boolean vacant) {
+		this.vacant = vacant;
+	}
+	public double getRate() {
+		return rate;
+	}
+	public void setRate(double rate) {
+		this.rate = rate;
+	}
+	//toString
+	@Override
+	public String toString() {
+		return "HotelRoom [roomNumber=" + roomNumber + ", roomType=" + roomType + ", vacant=" + vacant + ", rate="
+				+ rate + "]";
+	}
 	
-	//toString 
+	
+	public void isOccupied(){
+	if(vacant) {
+		System.out.println("The room is occupied!");
+	}
+	else {
+		setVacant(true);
+		System.out.println("The room is occupied!");
+	}
+}
 
 }
