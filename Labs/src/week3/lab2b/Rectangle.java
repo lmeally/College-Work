@@ -33,11 +33,21 @@ public class Rectangle {
 		else {
 			System.out.println("Width must be between 0.0 amd 40.0");}
 		}
+	
 	//toString
 		@Override
 		public String toString() {
 		return "Rectangle [length=" + length + ", width=" + width + "]";
 		
  } //main
-
+		
+		//misc methods
+			public float getArea(){
+			return length * width;
+	}
+			public float getPerimeter() {
+				return (length + width) * 2;
+			
+			}
+			
 }
