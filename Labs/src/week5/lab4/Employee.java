@@ -2,7 +2,7 @@ package week5.lab4;
 
 public class Employee {
 	
-	//variables
+	//variabless
 	private static int nextempno=1000;
 	private int empno;
 	private String fname;
