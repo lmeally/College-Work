@@ -1,4 +1,4 @@
-package week3.lab3;
+package week4.lab3;
 
 //Time class definition
 public class Time 

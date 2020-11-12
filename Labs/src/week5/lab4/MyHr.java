@@ -3,7 +3,7 @@ package week5.lab4;
 import java.util.Scanner;
 
 public class MyHr {
-
+	//test
 	public static void main(String[] args) {
 
 		public class MyHr {
