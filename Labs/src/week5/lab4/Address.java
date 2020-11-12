@@ -8,7 +8,7 @@ public class Address {
 	private String county;
 	
 	
-	//constructorss
+	//constructors
 	public Address(String street, String city_town, String county) {
 		super();
 		setStreet(street);

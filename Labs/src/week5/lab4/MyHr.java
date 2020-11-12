@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MyHr {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub w
+
 		public class MyHr {
 				
 				public void main(String args[])
