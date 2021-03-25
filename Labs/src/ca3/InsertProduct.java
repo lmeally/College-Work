@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class InsertCustomer {
+public class InsertProduct {
 	
 public static void main(String [] args) {
 // database URL
@@ -13,9 +13,10 @@ public static void main(String [] args) {
 	
 	Connection connection = null;
 	PreparedStatement pstat = null;
-	String CustomerID = "1";
-	String FirstName = "Lisa";
-	String LastName = "Smith";
+	String Product_Type = "Wooden Panel";
+	String Product_Cost = "30";
+	String Stock_Available = "25";
+	String Product_ID = "1";
 	int i=0;
 	
 try{
@@ -24,10 +25,11 @@ try{
 	DATABASE_URL, "root", "" );
 	
 	// create Statement for inserting into table
-	pstat = connection.prepareStatement("INSERT INTO customers (CustomerID, FirstName, LastName) VALUES (?,?,?)");
-	pstat.setString (1,CustomerID);
-	pstat.setString (2,FirstName);
-	pstat.setString (3,LastName); 
+	pstat = connection.prepareStatement("INSERT INTO product (Product_Type, Product_Cost, Stock_Available, Product_ID) VALUES (?,?,?,?)");
+	pstat.setString (1,Product_Type);
+	pstat.setString (2,Product_Cost);
+	pstat.setString (3,Stock_Available);
+	pstat.setString (4,Product_ID); 
 	
 	// Insert Data into database
 	i = pstat.executeUpdate();
